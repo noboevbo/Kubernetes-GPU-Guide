@@ -28,6 +28,8 @@ sudo systemctl enable docker && systemctl start docker
 sudo systemctl enable kubelet && systemctl start kubelet
 
 echo 'You might need to reboot / relogin to make docker work correctly'
+#put CUDA to nvidia lib, which will be linked in the docker containers. Otherwise cuda lib is not visible in the containers.
+sudo cp /usr/lib/x86_64-linux-gnu/libcuda* /usr/lib/nvidia-375/
 
 for file in /etc/systemd/system/kubelet.service.d/*-kubeadm.conf
 do
