@@ -1,0 +1,1 @@
+./build/examples/openpose/openpose.bin --video examples/media/video.avi --write_video ../data/output/result.avi --write_keypoint_json ../data/output/poses --no_display
