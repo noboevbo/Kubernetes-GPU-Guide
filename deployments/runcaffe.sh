@@ -1,3 +1,5 @@
+TODO: doesn't work like this, use caffe.yaml meanwhile
+
 kubectl run -i --tty --rm caffetest --image=kaixhin/cuda-caffe:8.0 --restart=Never --overrides='
 {
   "apiVersion": "extensions/v1beta1",
